@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.date {
+  text-align: center;
+  padding: 0.5rem;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  letter-spacing: 2px;
+}
+
+.button {
+  margin: 1rem;
+  background-color: #FFA500;
+  color: #fff;
+  border: 1px solid #FFA500;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  padding: 0.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: 0;
+}
+
+.play {
+  position: absolute;
+  top: 30%;
+  left: 33%
+}
