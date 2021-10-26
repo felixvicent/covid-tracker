@@ -1,8 +1,8 @@
-import React, { useRef, useState, useEffect } from "react";
-import mapboxgl from "mapbox-gl";
-import "mapbox-gl/dist/mapbox-gl.css"
+import React, { useRef, useState, useEffect } from 'react';
+import mapboxgl from 'mapbox-gl';
+import 'mapbox-gl/dist/mapbox-gl.css';
 
-import styles from "./Mapbox.module.css";
+import styles from './Mapbox.module.css';
 
 export default function Mapbox() {
   const [initialized, setInitialized] = useState(false);
@@ -29,16 +29,14 @@ export default function Mapbox() {
       if (mounted === false) return;
 
       setInitialized(true);
-    })
+    });
 
     return () => {
       mounted = false;
       mapRef.current!.remove();
-    }
+    };
     // eslint-disable-next-line
   }, [mapRef, containerRef]);
 
-  return (
-    <div className={styles.container} ref={containerRef}>Mapbox</div>
-  )
+  return <div className={styles.container} ref={containerRef}></div>;
 }

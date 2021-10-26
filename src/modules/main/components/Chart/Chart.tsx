@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import LineChart from "./LineChart";
+import LineChart from './LineChart';
 import styles from './Chart.module.css';
 
 export default function Chart() {
@@ -13,7 +13,8 @@ export default function Chart() {
           type="radio"
           name="serie"
           className={styles.confirmed}
-          checked={true} />
+          checked={true}
+        />
         <label htmlFor="confirmed">Casos confirmados</label>
 
         <div>
@@ -22,12 +23,11 @@ export default function Chart() {
             type="radio"
             name="serie"
             className={styles.deaths}
-            checked={true} />
+          />
         </div>
         <label htmlFor="deaths">Mortes confirmados</label>
-
       </div>
       <LineChart />
     </>
-  )
+  );
 }
