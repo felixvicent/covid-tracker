@@ -11,7 +11,6 @@ import React, {
 import { Place, PandemicState } from '../types';
 import { SERIE_TYPE_CONFIRMED } from '../constants';
 import fetchData from '../services/fetchData';
-import { type } from 'os';
 
 type Contextvalue = {
   date?: Date;

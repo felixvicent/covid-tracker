@@ -5,6 +5,7 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 import styles from './Mapbox.module.css';
 
 export default function Mapbox() {
+  // eslint-disable-next-line
   const [initialized, setInitialized] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<mapboxgl.Map | null>(null);

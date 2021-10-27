@@ -29,7 +29,6 @@ const sliderStyles = {
 
 export default function TimelimePlayer() {
   const [play, setPlay] = useState(false);
-  const [isPlaying, setIsPlaying] = useState(false);
 
   const { updatePosition, currentPosition, date, lastPosition } =
     useAppContext();
